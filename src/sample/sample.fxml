@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Button fx:id="stopButton" layoutX="880.0" layoutY="555.0" mnemonicParsing="false" onAction="#onStop" prefHeight="25.0" prefWidth="99.0" text="Stop" />
+      <TextField fx:id="gTextField" layoutX="140.0" layoutY="560.0" text="9.8" />
+      <TextField fx:id="lTextField" layoutX="681.0" layoutY="560.0" text="10" />
+      <TextField fx:id="kTextField" layoutX="410.0" layoutY="560.0" text="0" />
+      <TextField fx:id="mTextField" layoutX="681.0" layoutY="516.0" text="10" />
+      <TextField fx:id="theeta0TextField" layoutX="139.0" layoutY="516.0" text="30" />
+      <TextField fx:id="v0TextField" layoutX="410.0" layoutY="516.0" text="0" />
+      <Label layoutX="14.0" layoutY="564.0" text="Gravity" />
+      <Label layoutX="572.0" layoutY="564.0" text="Length" />
+      <Label layoutX="301.0" layoutY="564.0" text="Damping Factor" />
+      <Label layoutX="572.0" layoutY="520.0" text="Mass of Pendulum" />
+      <Label layoutX="14.0" layoutY="520.0" text="Initial Angle" />
+      <Label layoutX="303.0" layoutY="520.0" text="Initial Velocity" />
+      <Group fx:id="pendulum" layoutX="500.0" layoutY="100.0">
+         <children>
+            <Line endY="200.0" />
+            <Sphere layoutY="200.0" radius="20.0" />
+         </children>
+      </Group>
+      <Line endX="100.0" layoutX="450.0" layoutY="100.0" />
+      <Separator layoutX="10.0" layoutY="491.0" prefWidth="200.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+      <Button fx:id="startButton" layoutX="880.0" layoutY="516.0" mnemonicParsing="false" onAction="#onStart" prefHeight="25.0" prefWidth="99.0" text="Start" />
+      <TextField fx:id="theetaTextField" layoutX="305.0" layoutY="458.0" />
+      <TextField fx:id="AngVelTextField" layoutX="579.0" layoutY="458.0" />
+      <Label layoutX="244.0" layoutY="462.0" text="Theeta" />
+      <Label layoutX="472.0" layoutY="462.0" text="Angular Velocity" />
+   </children>
+</AnchorPane>
